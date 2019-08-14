@@ -1,0 +1,22 @@
+"0","library(knitr)"
+"0","library(rmdformats)"
+"2","Registered S3 methods overwritten by 'htmltools':
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio
+"
+"0","library(ggplot2)"
+"0","library(tidyr)"
+"0","library()"
+"0",""
+"0","## Global options"
+"0","options(max.print=""75"")"
+"0","opts_chunk$set(echo=FALSE,"
+"0","	             cache=TRUE,"
+"0","               prompt=FALSE,"
+"0","               tidy=TRUE,"
+"0","               comment=NA,"
+"0","               message=FALSE,"
+"0","               warning=FALSE)"
+"0","opts_knit$set(width=75)"

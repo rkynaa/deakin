@@ -1,0 +1,5 @@
+"0","data.stat <- data.frame(year=c(""2010"", ""2011"", ""2012""),"
+"0","                        meanTemp=c(mean(data$temperature2010),mean(data$temperature2011),mean(data$temperature2012)),"
+"0","                        maxTemp=c(max(data$temperature2010),max(data$temperature2011),max(data$temperature2012)),"
+"0","                        minTemp=c(min(data$temperature2010),min(data$temperature2011),min(data$temperature2012)))"
+"0","plot(data.stat$meanTemp)"

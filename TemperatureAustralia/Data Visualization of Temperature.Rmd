@@ -1,0 +1,69 @@
+---
+title: ""
+date: "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    highlight: kate
+---
+
+
+```{r knitr_init, echo=FALSE, cache=FALSE}
+library(knitr)
+library(rmdformats)
+library(ggplot2)
+library(tidyr)
+library()
+
+## Global options
+options(max.print="75")
+opts_chunk$set(echo=FALSE,
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+
+```{r, echo=F}
+data <- read.csv("temperature.csv")
+```
+
+# Data Visualization of Temperature in Australie
+
+```{r,echo=F}
+data_df_2010 <- data.frame(month=data$month,
+                      temperature=data$X2010)
+data_df_2011 <- data.frame(month=data$month,
+                      temperature=data$X2011)
+data_df_2012 <- data.frame(month=data$month,
+                      temperature=data$X2012)
+data <- aggregate.data.frame(list(temperature2010 = data$X2010,
+                          temperature2011 = data$X2011,
+                          temperature2012 = data$X2012),
+                     by = list(month=data$month),
+                     mean)
+data_df <- gather(data, key = "var", value = "average", temperature2010, temperature2011, temperature2012)
+plot(data_df$average)
+  
+```
+
+```{r}
+data.stat <- data.frame(year=c("2010", "2011", "2012"),
+                        meanTemp=c(mean(data$temperature2010),mean(data$temperature2011),mean(data$temperature2012)),
+                        maxTemp=c(max(data$temperature2010),max(data$temperature2011),max(data$temperature2012)),
+                        minTemp=c(min(data$temperature2010),min(data$temperature2011),min(data$temperature2012)))
+plot(data.stat$meanTemp)
+lines(data.stat$year, data.stat$meanTemp)
+```
+
+```{r}
+boxplot(data$temperature2010,data$temperature2011,data$temperature2012)
+```
+
+
+```{r}
+ggplot(data_df, aes(x = month, y = average)) + geom_col(aes(fill = var), position = "dodge")
+```
+
