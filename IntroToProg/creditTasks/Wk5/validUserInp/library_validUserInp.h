@@ -1,9 +1,23 @@
 #include "splashkit.h"
+#include <string.h>
+#include <ctype.h>
 
-#define pi 3.14
+string trim_str(string input){
+    int len_inp = input.length();
+    char inpArrChar[len_inp];
+    string result;
+    strcpy(inpArrChar,input.c_str());
+    for (int i = 0; i < len_inp; i++){
+        if (!isspace(inpArrChar[i])){
+            result += std::string(1,inpArrChar[i]);
+        }
+    }
+    return result;
+}
 
 bool read_boolean() {
     string input = to_lowercase(read_line());
+    input = trim_str(input);
     if (input == "yes" || input == "y") {
         return true;
     } else {
@@ -11,76 +25,92 @@ bool read_boolean() {
     }
 }
 
-bool read_double(double pass){
+double read_double(){
     string input = read_line();
+    double pass;
     if (is_double(input)){
-        pass = convert_to_double(input)
-        return true;
+        pass = convert_to_double(input);
     } else {
-        return false;
+        pass = 345.9657;
     }
+    return pass;
 }
 
-void decideMinMax (){
-    double min = 0, max = 0, indicator = 0, guess = 0;
-    bool minIndicator, maxIndicator;
-    while (min){
-        write("Enter a minimum number: ");
-        minIndicator = read_double(min);
-        if (min) {
-            write_line("You entered " + std::to_string(min));
-            while (max == 0) {
-                write ("Enter a maximum number: ");
-                maxIndicator = read_double(max);
-                if (max != 0) {
-                    write_line("You entered " + std::to_string(max));
-                    // indicator = read_double_range(min, max, guess)
-                    if (indicator == -1) {
-                        write_line("Wrong input! try again!");
-                        min = 0;
-                    } else {
-                        write("You entered " + std::to_string(guess))
-                        if (indicator == 0) {
-                            write_line(", which is not between your minimum and maximum");
-                            break;
+void read_double_range(){
+    double min, max, mid;
+    bool minInd = true, maxInd = true, midInd = true, counter;
+    while (minInd){
+        write("Enter your minimum: ");
+        min = read_double();
+        if (min != 345.9657) {
+            while (maxInd) {
+                write("Enter your maximum: ");
+                max = read_double();
+                if (max != 345.9657) {
+                    if (max <= min) {
+                        write("Are you sure that is your maximum? ");
+                        counter = read_boolean();
+                        if (!counter){
+                            write("Okay! ");
                         } else {
-                            write_line(", which is between your minimum and maximum");
-                            break;
+                            if (max < min){
+                                write_line("Your maximum is less than your minimum");
+                            } else {
+                                write_line("Your maximum is equal to your minimum");
+                            }
+                            maxInd = false;
                         }
+                    } else {
+                        while (midInd){
+                            write("Enter a number between " + std::to_string(min) + " and " + std::to_string(max) + " : ");
+                            mid = read_double();
+                            if (mid != 345.9657) {
+                                write("You entered " + std::to_string(mid));
+                                if (mid > min && mid < max){
+                                    write_line(", which is between " + std::to_string(min) + " and " + std::to_string(max));
+                                } else {
+                                    write_line(", which is not between " + std::to_string(min) + " and " + std::to_string(max));
+                                }
+                                midInd = false;
+                                maxInd = false;
+                                minInd = false;
+                            } else {
+                                write("Are you sure that is your input? ");
+                                counter = read_boolean();
+                                if (!counter){
+                                    write("Okay! ");
+                                } else {
+                                    write_line("You didn't enter a number!");
+                                    midInd = false;
+                                }
+                            }
+                        }
+                        midInd = true;
                     }
                 } else {
-                    write("Are you sure? ");
-                    bool counter = read_boolean();
-                    if (counter) {
-                        write_line("You entered 0");
-                        break;
-                    } else {
+                    write("Are you sure that is your maximum? ");
+                    counter = read_boolean();
+                    if (!counter){
                         write("Okay! ");
+                    } else {
+                        write_line("You didn't enter a number!");
+                        maxInd = false;
                     }
                 }
             }
-            max = 0;
+            maxInd = true;
         } else {
-            write("Are you sure? ");
-            bool counter = read_boolean();
-            if (counter) {
-                write_line("You entered 0");
-                break;
-            } else {
+            write("Are you sure that is your minimum? ");
+            counter = read_boolean();
+            if (!counter){
                 write("Okay! ");
+            } else {
+                write_line("You didn't enter a number!");
+                minInd = false;
             }
         }
-
     }
-}
-
-double read_double_range(double min, double max, duble guess){
-    double input = read_double();
-    if (input == 0){
-        return -1;
-    } else {
-        if (input)
-    }
+    minInd = true;
 }
 
 void enter_name(string name){
@@ -91,44 +121,6 @@ void enter_name(string name){
            write_line("Welcome, "+name);
         } else {
             write_line("Enter a valid name!");
-        }
-    }
-}
-
-void enter_age(int age){
-    while (age == 0){
-        write("Enter your age: ");
-        string input;
-        input = read_line();
-        if (is_integer(input)){
-            age = convert_to_integer(input);
-            write_line("You are "+ std::to_string(age) + " years old");
-        } else {
-            write_line("Try again!");
-            age = 0;
-        }
-    }
-}
-
-void enter_radius(double radius){
-    bool inpIndicator = false;
-    while (radius == 0) {
-        write("Enter a number as a radius: ");
-        radius = read_double();
-        if (radius == 0) {
-            write("Are you sure? ");
-            bool counter = read_boolean();
-            if (counter) {
-                write_line("You entered 0");
-                break;
-            } else {
-                write("Okay! ");
-            }
-        } else {
-            double area = pi * radius * radius, perimeter = 2 * pi * radius;
-            write_line("The radius is: " + std::to_string(radius));
-            write_line("The area of the circle is: " + std::to_string(area));
-            write_line("The perimeter of the circle is: " + std::to_string(perimeter));
         }
     }
 }
