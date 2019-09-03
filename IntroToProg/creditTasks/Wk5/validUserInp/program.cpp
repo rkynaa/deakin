@@ -3,16 +3,6 @@
 
 #define pi 3.14
 
-// double read_double_range(int min, int max){
-//     string input = read_line();
-//     double conv_inp = convert_to_integer(input);
-//     if (is_double(input) && conv_inp > min && conv_inp < max){
-//         return conv_inp;
-//     } else {
-//         conv_inp;
-//     }
-// }
-
 int main()
 {
     bool counter;
