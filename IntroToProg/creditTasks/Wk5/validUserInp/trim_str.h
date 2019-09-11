@@ -2,7 +2,6 @@
 #include <string.h>
 #include <ctype.h>
 
-#define pi 3.14
 
 string trim_str(string input){
     int len_inp = input.length();
