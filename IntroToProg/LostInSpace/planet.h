@@ -71,4 +71,6 @@ planet_data new_plan_funct();
 
 void make_planets(vector<planet_data> &planets, vector<planet_kind> &listPlanets, vector<int> &indexes);
 
+string disp_planet_name(planet_data &curr);
+
 #endif 

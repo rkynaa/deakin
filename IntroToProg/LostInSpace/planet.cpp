@@ -153,3 +153,28 @@ void make_planets(vector<planet_data> &planets, vector<planet_kind> &listPlanets
         }
     }
 }
+
+string disp_planet_name(planet_data &curr) {
+    string currTemp = to_string(curr.kind);
+    switch (convert_to_integer(currTemp))
+    {
+        case 0:
+            return "EARTH";
+        case 1:
+            return "JUPITER";
+        case 2:
+            return "MARS";
+        case 3:
+            return "MERCURY";
+        case 4:
+            return "NEPTUNE";
+        case 5:
+            return "PLUTO";
+        case 6:
+            return "SATURN";
+        case 7:
+            return "URANUS";
+        default:
+            return "VENUS";
+    }
+}

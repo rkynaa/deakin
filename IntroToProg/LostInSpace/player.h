@@ -2,6 +2,8 @@
 #define LOST_IN_SPACE_PLAYER
 
 #include "splashkit.h"
+#include "planet.h"
+#include "extras.h"
 #include <vector>
 
 using namespace std;
@@ -62,5 +64,7 @@ void update_player(player_data &player_to_update);
  * @param player    The player to update
  */
 void handle_input(player_data &player);
+
+void display_hud(player_data &player, vector<planet_data> &planets, vector<float> &distPlanets);
 
 #endif 

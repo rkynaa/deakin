@@ -2,7 +2,7 @@
 #include <vector>
 #include "player.h"
 #include "planet.h"
-#include <graphics.h>
+#include "extras.h"
 
 using namespace std;
 
@@ -26,6 +26,7 @@ int main()
 
     vector<planet_data> planets;
     vector<planet_kind> listPlanets;
+    vector<float> distPlanets;
     vector<int> indexes;
 
     make_planets(planets, listPlanets, indexes);
@@ -48,15 +49,7 @@ int main()
         // Redraw everything
         clear_screen(COLOR_BLACK);
 
-        fill_rectangle(COLOR_GRAY, 0, 0, 300, 30, option_to_screen());
-
-        fill_triangle(COLOR_GOLD, 300, 0, 320, 0, 300, 30, option_to_screen());
-        fill_triangle(COLOR_GOLD, 0, 30, 100, 30, 50, 50, option_to_screen());
-        fill_triangle(COLOR_GOLD, 100, 30, 200, 30, 150, 50, option_to_screen());
-        fill_triangle(COLOR_GOLD, 200, 30, 300, 30, 250, 50, option_to_screen());
-
-        draw_text("SCORE: ", COLOR_GOLD, , 0, 0, option_to_screen());
-        draw_text("LOCATION: " + point_to_string(center_point(player.player_sprite)), COLOR_WHITE, 0, 10, option_to_screen());
+        display_hud(player, planets, distPlanets);
 
         // as well as the player who can move
         for (int i = 0; i < (int) planets.size(); i++){

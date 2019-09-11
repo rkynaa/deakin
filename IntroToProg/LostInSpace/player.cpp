@@ -1,4 +1,6 @@
 #include "player.h"
+#include "planet.h"
+#include "extras.h"
 #include "splashkit.h"
 
 using namespace std;
@@ -136,4 +138,24 @@ void handle_input(player_data &player)
         sprite_set_dx(player.player_sprite, dx - PLAYER_SPEED);
     if (key_typed(UP_KEY))
         sprite_set_dx(player.player_sprite, dx + PLAYER_SPEED);
+}
+
+void display_hud(player_data &player, vector<planet_data> &planets, vector<float> distPlanets){
+    float res;
+    fill_rectangle(COLOR_GRAY, 0, 0, 300, 50, option_to_screen());
+    fill_triangle(COLOR_GOLD, 300, 0, 320, 25, 300, 50, option_to_screen());
+    fill_triangle(COLOR_GOLD, 0, 50, 100, 50, 50, 70, option_to_screen());
+    fill_triangle(COLOR_GOLD, 100, 50, 200, 50, 150, 70, option_to_screen());
+    fill_triangle(COLOR_GOLD, 200, 50, 300, 50, 250, 70, option_to_screen());
+
+    draw_text("SCORE: ", COLOR_GOLD, 0, 0, option_to_screen());
+    for (int i = 0; i < (int) distPlanets.size(); i++){
+        if (res != NULL) {
+            res = distPlanets.at(i);
+        } else {
+            if (distPlanets.at(i) < res) {
+                res = distPlanets.at(i);
+            }
+        }
+    }
 }
