@@ -4,8 +4,11 @@
         <title>Homepage | Rakyan's Point of View</title>
         <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styleHome.css">
-        <style>
-        </style>
+        <script>
+            function showMessage(){
+                alert ('Hello Everyone!');
+            }
+        </script>
     </head>
     <body style="background-color: rgb(92, 90, 90)">
         <header>
@@ -13,14 +16,17 @@
                 <h1>Rakyan's Point of View</h1>
                 <p>By: Rakyan Satrya Adhikara</p>
             </div>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="https://www.google.com/">News</a></li>
-                <li><a href="https://www.google.com/">Contact</a></li>
-                <li><a href="https://www.google.com/">About</a></li>
-            </ul>
+            <marquee>
+                <ul id = "myMainMenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="https://www.google.com/"><img src="https://cdn.discordapp.com/attachments/624062089618522112/624962243863511062/objects-02-512.png"></a></li>
+                    <li><a href="https://www.google.com/">Contact</a></li>
+                    <li><a href="https://www.google.com/">About</a></li>
+                </ul>
+            </marquee>
         </header>
         <div style="margin: 10px; text-align: center">
+            <h1 id="myID" onclick="showMessage()">SIT124 Week 10 - JavaScript</h1>
             <p></p>
         </div>
         <footer>
@@ -32,4 +38,16 @@
             </ul>
         </footer>
     </body>
+    <script>
+        var header = document.getElementById("myID");
+        var mainMenu = document.getElementById("myMainMenu");
+        setInterval(
+            function () {
+                var randomColor1 = Math.floor(Math.random()*16777215).toString(16);
+                var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+                header.style.color = "#"+randomColor1;
+                header.style.backgroundColor = "#"+randomColor2;
+            },100);
+        header.style.fontSize = "30px";
+    </script>
 </html>

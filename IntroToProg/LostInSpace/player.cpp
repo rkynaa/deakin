@@ -1,6 +1,5 @@
 #include "player.h"
 #include "planet.h"
-#include "extras.h"
 #include "splashkit.h"
 
 using namespace std;
@@ -140,8 +139,22 @@ void handle_input(player_data &player)
         sprite_set_dx(player.player_sprite, dx + PLAYER_SPEED);
 }
 
-void display_hud(player_data &player, vector<planet_data> &planets, vector<float> distPlanets){
-    float res;
+void dist_player_planet(player_data &player, vector<planet_data> &planets, vector<float> &distPlanets){
+    for (int i = 0; i < (int) planets.size(); i++){
+        if (distPlanets.empty() == false) {
+            for (int j = 0; j < (int) distPlanets.size(); j++){
+                distPlanets.pop_back();
+            }
+        } 
+        point_2d distPlayer = center_point(player.player_sprite), distPlanet = center_point(planets.at(i).planet_sprite);
+        float temp = point_point_distance(distPlanet, distPlayer);
+        distPlanets.push_back(temp);
+    }
+}
+
+void display_hud(player_data &player, vector<planet_data> &planets, vector<float> &distPlanets){
+    float res = -1;
+    int shortDest;
     fill_rectangle(COLOR_GRAY, 0, 0, 300, 50, option_to_screen());
     fill_triangle(COLOR_GOLD, 300, 0, 320, 25, 300, 50, option_to_screen());
     fill_triangle(COLOR_GOLD, 0, 50, 100, 50, 50, 70, option_to_screen());
@@ -149,13 +162,17 @@ void display_hud(player_data &player, vector<planet_data> &planets, vector<float
     fill_triangle(COLOR_GOLD, 200, 50, 300, 50, 250, 70, option_to_screen());
 
     draw_text("SCORE: ", COLOR_GOLD, 0, 0, option_to_screen());
+    dist_player_planet(player, planets, distPlanets);
     for (int i = 0; i < (int) distPlanets.size(); i++){
-        if (res != NULL) {
+        if (res == -1){
             res = distPlanets.at(i);
+            shortDest = i;
         } else {
             if (distPlanets.at(i) < res) {
                 res = distPlanets.at(i);
+                shortDest = i;
             }
         }
     }
+    draw_text("Planet " + disp_planet_name(planets.at(shortDest)), COLOR_WHITE,  0,10,option_to_screen());
 }

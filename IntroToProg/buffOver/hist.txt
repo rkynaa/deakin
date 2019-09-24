@@ -1,0 +1,500 @@
+   12  cd ..
+   13  cd DataScience/
+   14  git status
+   15  git add .
+   16  git commit -m "Commit #7 (?)"
+   17  git push origin master
+   18  git push origin master
+   19  git config http.postBuffer 524288000
+   20  git push origin master
+   21  git push origin master
+   22  git push origin master --force
+   23  git init
+   24  ls
+   25  git status
+   26  git push origin master --force
+   27  git config --global http.postBuffer 524288000
+   28  git push origin master --force
+   29  git push origin master --force
+   30  git config http.sslVersion tlsv1.2
+   31  git push origin master --force
+   32  git init
+   33  git config http.sslVersion tlsv1.2
+   34  git config --global http.postBuffer 524288000
+   35  git push origin master --force
+   36  git --version
+   37  git config --global http.postBuffer 1048576000
+   38  git push origin master --force
+   39  cd ..
+   40  cd deakin/
+   41  git status
+   42  git add .
+   43  git commit -m "Commit #7 (Game Fundamentals)"
+   44  git push origin master
+   45  git push origin master
+   46  git push origin master --force
+   47  git push origin master --force
+   48  cd ..
+   49  cd DataScience/
+   50  git add .
+   51  git commit -m "Commit #?"
+   52  git push origin master --force
+   53  git init
+   54  git status
+   55  git push origin master --force
+   56  git lfs install
+   57  git-lfs install
+   58  git lfs install
+   59  git lfs install
+   60  git lfs install
+   61  curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+   62  su
+   63  apt-get install sudo
+   64  curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh
+   65  bash <(curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh)
+   66  bash <(curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh)
+   67  bash <(curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh)
+   68  which git
+   69  cd /c/Users/Rakyan/Documents/
+   70  ls
+   71  cd deakin/
+   72  ls
+   73  cd IntroToProg/
+   74  ls
+   75  cd arrStruct/
+   76  skm clang++ program.cpp 
+   77  ls
+   78  skm clang++ program.cpp -o arrStruct
+   79  skm clang++ program.cpp -o arrStruct
+   80  skm clang++ program.cpp -o arrStruct
+   81  skm clang++ program.cpp -o arrStruct
+   82  skm clang++ program.cpp -o arrStruct
+   83  skm clang++ program.cpp -o arrStruct
+   84  skm clang++ program.cpp -o arrStruct
+   85  skm clang++ program.cpp -o arrStruct
+   86  skm clang++ program.cpp -o arrStruct
+   87  skm clang++ program.cpp -o arrStruct
+   88  skm clang++ program.cpp -o arrStruct
+   89  skm clang++ program.cpp -o arrStruct
+   90  skm clang++ program.cpp -o arrStruct
+   91  skm clang++ program.cpp -o arrStruct
+   92  skm clang++ program.cpp -o arrStruct
+   93  skm clang++ program.cpp -o arrStruct
+   94  skm clang++ program.cpp -o arrStruct
+   95  skm clang++ program.cpp -o arrStruct
+   96  skm clang++ program.cpp -o arrStruct
+   97  skm clang++ program.cpp -o arrStruct
+   98  skm clang++ program.cpp -o arrStruct
+   99  ./arrStruct.exe 
+  100  ./arrStruct.exe 
+  101  skm clang++ program.cpp -o arrStruct
+  102  skm clang++ program.cpp -o arrStruct
+  103  ./arrStruct.exe 
+  104  skm clang++ program.cpp -o arrStruct
+  105  skm clang++ program.cpp -o arrStruct
+  106  ./arrStruct.exe 
+  107  skm clang++ program.cpp -o arrStruct
+  108  ./arrStruct.exe 
+  109  ./arrStruct.exe 
+  110  skm clang++ program.cpp -o arrStruct
+  111  ./arrStruct.exe 
+  112  skm clang++ program.cpp -o arrStruct
+  113  ./arrStruct.exe 
+  114  skm clang++ program.cpp -o arrStruct
+  115  skm clang++ program.cpp -o arrStruct
+  116  ./arrStruct.exe 
+  117  skm clang++ program.cpp -o arrStruct
+  118  skm clang++ program.cpp -o arrStruct
+  119  ./arrStruct.exe 
+  120  skm clang++ program.cpp -o arrStruct
+  121  cd ..
+  122  mkdir struct_enum
+  123  cd struct_enum/
+  124  skm new c++
+  125  skm clang++ program.cpp -o struct_enum
+  126  skm clang++ program.cpp -o struct_enum
+  127  ./struct_enum.exe 
+  128  skm clang++ program.cpp -o struct_enum
+  129  skm clang++ program.cpp -o struct_enum
+  130  ./struct_enum.exe 
+  131  skm clang++ program.cpp -o struct_enum
+  132  ./struct_enum.exe 
+  133  skm clang++ program.cpp -o struct_enum
+  134  ./struct_enum.exe 
+  135  skm clang++ program.cpp -o struct_enum
+  136  ./struct_enum.exe 
+  137  skm clang++ program.cpp -o struct_enum
+  138  skm clang++ program.cpp -o struct_enum
+  139  skm clang++ program.cpp -o struct_enum
+  140  skm clang++ program.cpp -o struct_enum
+  141  ./struct_enum.exe 
+  142  skm clang++ program.cpp -o struct_enum
+  143  ./struct_enum.exe 
+  144  skm clang++ program.cpp -o struct_enum
+  145  ./struct_enum.exe 
+  146  skm clang++ program.cpp -o struct_enum
+  147  ./struct_enum.exe 
+  148  ./struct_enum.exe 
+  149  skm clang++ program.cpp -o struct_enum
+  150  ./struct_enum.exe 
+  151  skm clang++ program.cpp -o struct_enum
+  152  skm clang++ program.cpp -o struct_enum
+  153  skm clang++ program.cpp -o struct_enum
+  154  skm clang++ program.cpp -o struct_enum
+  155  skm clang++ program.cpp -o struct_enum
+  156  clear
+  157  skm clang++ program.cpp -o struct_enum
+  158  skm clang++ program.cpp -o struct_enum
+  159  ./struct_enum.exe 
+  160  skm clang++ program.cpp -o struct_enum
+  161  skm clang++ program.cpp -o struct_enum
+  162  ./struct_enum.exe 
+  163  skm clang++ program.cpp -o struct_enum
+  164  ./struct_enum.exe 
+  165  skm clang++ program.cpp -o struct_enum
+  166  ./struct_enum.exe 
+  167  skm clang++ program.cpp -o struct_enum
+  168  ./struct_enum.exe 
+  169  skm clang++ program.cpp -o struct_enum
+  170  ./struct_enum.exe 
+  171  cd /c/Users/Rakyan/Documents/
+  172  cd deakin/
+  173  ls
+  174  cd IntroToProg/
+  175  ls
+  176  cd struct_enum/
+  177  skm clang++ program.cpp -o struct_enum
+  178  skm clang++ program.cpp -o struct_enum
+  179  cd /c/Users/Rakyan/Documents/deakin/
+  180  cd IntroToProg/
+  181  cd struct_enum/
+  182  ls
+  183  skm clang++ program.cpp -o struct_enum
+  184  ./struct_enum.exe 
+  185  skm clang++ program.cpp -o struct_enum
+  186  ./struct_enum.exe 
+  187  skm clang++ program.cpp -o struct_enum
+  188  cd /c/Users/Rakyan/Documents/
+  189  ls
+  190  cd deakin/
+  191  cd IntroToProg/
+  192  ls
+  193  cd LostInSpace/
+  194  ls
+  195  skm clang++ program.cpp -o lostinspace
+  196  skm clang++ *.cpp -o lostinspace
+  197  ./lostinspace.exe 
+  198  skm clang++ *.cpp -o lostinspace
+  199  ./lostinspace.exe 
+  200  skm clang++ *.cpp -o lostinspace
+  201  ./lostinspace.exe 
+  202  skm clang++ *.cpp -o lostinspace
+  203  ./lostinspace.exe 
+  204  cd /c/Users/Rakyan/Documents/deakin/IntroToProg/LostInSpace/
+  205  skm clang++ *.cpp -o lostinspace
+  206  skm clang++ *.cpp -o lostinspace
+  207  ./lostinspace.exe 
+  208  ./lostinspace.exe 
+  209  cd /c/Users/Rakyan/Documents/deakin/IntroToProg/LostInSpace/
+  210  skm clang++ *.cpp -o lostinspace
+  211  ./lostinspace.exe 
+  212  ./lostinspace.exe 
+  213  ./lostinspace.exe 
+  214  skm clang++ *.cpp -o lostinspace
+  215  ./lostinspace.exe 
+  216  skm clang++ *.cpp -o lostinspace
+  217  skm clang++ *.cpp -o lostinspace
+  218  ./lostinspace.exe 
+  219  skm clang++ *.cpp -o lostinspace
+  220  ./lostinspace.exe 
+  221  skm clang++ *.cpp -o lostinspace
+  222  ./lostinspace.exe 
+  223  skm clang++ *.cpp -o lostinspace
+  224  ./lostinspace.exe 
+  225  skm clang++ *.cpp -o lostinspace
+  226  skm clang++ *.cpp -o lostinspace
+  227  skm clang++ *.cpp -o lostinspace
+  228  skm clang++ *.cpp -o lostinspace
+  229  skm clang++ *.cpp -o lostinspace
+  230  skm clang++ *.cpp -o lostinspace
+  231  skm clang++ *.cpp -o lostinspace
+  232  skm clang++ *.cpp -o lostinspace
+  233  skm clang++ *.cpp -o lostinspace
+  234  skm clang++ *.cpp -o lostinspace
+  235  skm clang++ *.cpp -o lostinspace
+  236  skm clang++ *.cpp -o lostinspace
+  237  skm clang++ *.cpp -o lostinspace
+  238  skm clang++ *.cpp -o lostinspace
+  239  skm clang++ *.cpp -o lostinspace
+  240  skm clang++ *.cpp -o lostinspace
+  241  skm clang++ *.cpp -o lostinspace
+  242  skm clang++ *.cpp -o lostinspace
+  243  skm clang++ *.cpp -o lostinspace
+  244  skm clang++ *.cpp -o lostinspace
+  245  skm clang++ *.cpp -o lostinspace
+  246  skm clang++ *.cpp -o lostinspace
+  247  skm clang++ *.cpp -o lostinspace
+  248  skm clang++ *.cpp -o lostinspace
+  249  ./lostinspace.exe 
+  250  ./lostinspace.exe 
+  251  skm clang++ *.cpp -o lostinspace
+  252  skm clang++ *.cpp -o lostinspace
+  253  skm clang++ *.cpp -o lostinspace
+  254  ./lostinspace.exe 
+  255  skm clang++ *.cpp -o lostinspace
+  256  ./lostinspace.exe 
+  257  ./lostinspace.exe 
+  258  ./lostinspace.exe 
+  259  skm clang++ *.cpp -o lostinspace
+  260  ./lostinspace.exe 
+  261  ./lostinspace.exe 
+  262  ./lostinspace.exe 
+  263  skm clang++ *.cpp -o lostinspace
+  264  ./lostinspace.exe 
+  265  ./lostinspace.exe 
+  266  skm clang++ *.cpp -o lostinspace
+  267  skm clang++ *.cpp -o lostinspace
+  268  skm clang++ *.cpp -o lostinspace
+  269  skm clang++ *.cpp -o lostinspace
+  270  ./lostinspace.exe 
+  271  skm clang++ *.cpp -o lostinspace
+  272  ./lostinspace.exe 
+  273  skm clang++ *.cpp -o lostinspace
+  274  skm clang++ *.cpp -o lostinspace
+  275  skm clang++ *.cpp -o lostinspace
+  276  skm clang++ *.cpp -o lostinspace
+  277  ./lostinspace.exe 
+  278  skm clang++ *.cpp -o lostinspace
+  279  ./lostinspace.exe 
+  280  skm clang++ *.cpp -o lostinspace
+  281  skm clang++ *.cpp -o lostinspace
+  282  ./lostinspace.exe 
+  283  skm clang++ *.cpp -o lostinspace
+  284  ./lostinspace.exe 
+  285  skm clang++ *.cpp -o lostinspace
+  286  ./lostinspace.exe 
+  287  skm clang++ *.cpp -o lostinspace
+  288  ./lostinspace.exe 
+  289  skm clang++ *.cpp -o lostinspace
+  290  ./lostinspace.exe 
+  291  skm clang++ *.cpp -o lostinspace
+  292  ./lostinspace.exe 
+  293  skm clang++ *.cpp -o lostinspace
+  294  ./lostinspace.exe 
+  295  skm clang++ *.cpp -o lostinspace
+  296  ./lostinspace.exe 
+  297  skm clang++ *.cpp -o lostinspace
+  298  ./lostinspace.exe 
+  299  skm clang++ *.cpp -o lostinspace
+  300  ./lostinspace.exe 
+  301  skm clang++ *.cpp -o lostinspace
+  302  skm clang++ *.cpp -o lostinspace
+  303  ./lostinspace.exe 
+  304  ./lostinspace.exe 
+  305  ./lostinspace.exe 
+  306  skm clang++ *.cpp -o lostinspace
+  307  skm clang++ *.cpp -o lostinspace
+  308  skm clang++ *.cpp -o lostinspace
+  309  ./lostinspace.exe 
+  310  skm clang++ *.cpp -o lostinspace
+  311  ./lostinspace.exe 
+  312  ./lostinspace.exe 
+  313  ./lostinspace.exe 
+  314  ./lostinspace.exe 
+  315  skm clang++ *.cpp -o lostinspace
+  316  ./lostinspace.exe 
+  317  ./lostinspace.exe 
+  318  skm clang++ *.cpp -o lostinspace
+  319  ./lostinspace.exe 
+  320  skm clang++ *.cpp -o lostinspace
+  321  skm clang++ *.cpp -o lostinspace
+  322  skm clang++ *.cpp -o lostinspace
+  323  ./lostinspace.exe 
+  324  skm clang++ *.cpp -o lostinspace
+  325  ./lostinspace.exe 
+  326  skm clang++ *.cpp -o lostinspace
+  327  ./lostinspace.exe 
+  328  ./lostinspace.exe 
+  329  ./lostinspace.exe 
+  330  skm clang++ *.cpp -o lostinspace
+  331  ./lostinspace.exe 
+  332  skm clang++ *.cpp -o lostinspace
+  333  ./lostinspace.exe 
+  334  ./lostinspace.exe 
+  335  ./lostinspace.exe 
+  336  skm clang++ *.cpp -o lostinspace
+  337  ./lostinspace.exe 
+  338  skm clang++ *.cpp -o lostinspace
+  339  skm clang++ *.cpp -o lostinspace
+  340  skm clang++ *.cpp -o lostinspace
+  341  skm clang++ *.cpp -o lostinspace
+  342  skm clang++ *.cpp -o lostinspace
+  343  ./lostinspace.exe 
+  344  skm clang++ *.cpp -o lostinspace
+  345  ./lostinspace.exe 
+  346  skm clang++ *.cpp -o lostinspace
+  347  skm clang++ *.cpp -o lostinspace
+  348  ./lostinspace.exe 
+  349  ./lostinspace.exe 
+  350  ./lostinspace.exe 
+  351  ./lostinspace.exe 
+  352  ./lostinspace.exe 
+  353  skm clang++ *.cpp -o lostinspace
+  354  ./lostinspace.exe 
+  355  ./lostinspace.exe 
+  356  ./lostinspace.exe 
+  357  skm clang++ *.cpp -o lostinspace
+  358  ./lostinspace.exe 
+  359  ./lostinspace.exe 
+  360  skm clang++ *.cpp -o lostinspace
+  361  skm clang++ *.cpp -o lostinspace
+  362  ./lostinspace.exe 
+  363  ./lostinspace.exe 
+  364  skm clang++ *.cpp -o lostinspace
+  365  skm clang++ *.cpp -o lostinspace
+  366  skm clang++ *.cpp -o lostinspace
+  367  ./lostinspace.exe 
+  368  ./lostinspace.exe 
+  369  ./lostinspace.exe 
+  370  ./lostinspace.exe 
+  371  skm clang++ *.cpp -o lostinspace
+  372  ./lostinspace.exe 
+  373  skm clang++ *.cpp -o lostinspace
+  374  ./lostinspace.exe 
+  375  skm clang++ *.cpp -o lostinspace
+  376  ./lostinspace.exe 
+  377  skm clang++ *.cpp -o lostinspace
+  378  ./lostinspace.exe 
+  379  skm clang++ *.cpp -o lostinspace
+  380  ./lostinspace.exe 
+  381  skm clang++ *.cpp -o lostinspace
+  382  ./lostinspace.exe 
+  383  skm clang++ *.cpp -o lostinspace
+  384  ./lostinspace.exe 
+  385  skm clang++ *.cpp -o lostinspace
+  386  ./lostinspace.exe 
+  387  skm clang++ *.cpp -o lostinspace
+  388  ./lostinspace.exe 
+  389  skm clang++ *.cpp -o lostinspace
+  390  ./lostinspace.exe 
+  391  skm clang++ *.cpp -o lostinspace
+  392  ./lostinspace.exe 
+  393  ./lostinspace.exe 
+  394  skm clang++ *.cpp -o lostinspace
+  395  ./lostinspace.exe 
+  396  skm clang++ *.cpp -o lostinspace
+  397  ./lostinspace.exe 
+  398  ./lostinspace.exe 
+  399  skm clang++ *.cpp -o lostinspace
+  400  ./lostinspace.exe 
+  401  skm clang++ *.cpp -o lostinspace
+  402  ./lostinspace.exe 
+  403  skm clang++ *.cpp -o lostinspace
+  404  skm clang++ *.cpp -o lostinspace
+  405  ./lostinspace.exe 
+  406  skm clang++ *.cpp -o lostinspace
+  407  ./lostinspace.exe 
+  408  skm clang++ *.cpp -o lostinspace
+  409  ./lostinspace.exe 
+  410  skm clang++ *.cpp -o lostinspace
+  411  ./lostinspace.exe 
+  412  skm clang++ *.cpp -o lostinspace
+  413  ./lostinspace.exe 
+  414  skm clang++ *.cpp -o lostinspace
+  415  ./lostinspace.exe 
+  416  skm clang++ *.cpp -o lostinspace
+  417  ./lostinspace.exe 
+  418  skm clang++ *.cpp -o lostinspace
+  419  ./lostinspace.exe 
+  420  skm clang++ *.cpp -o lostinspace
+  421  ./lostinspace.exe 
+  422  skm clang++ *.cpp -o lostinspace
+  423  ./lostinspace.exe 
+  424  skm clang++ *.cpp -o lostinspace
+  425  ./lostinspace.exe 
+  426  ./lostinspace.exe 
+  427  skm clang++ *.cpp -o lostinspace
+  428  ./lostinspace.exe 
+  429  skm clang++ *.cpp -o lostinspace
+  430  ./lostinspace.exe 
+  431  skm clang++ *.cpp -o lostinspace
+  432  ./lostinspace.exe 
+  433  history
+  434  cd /c/Users/Rakyan/Documents/deakin/IntroToProg/LostInSpace/
+  435  skm clang++ *.cpp -o lostinspace
+  436  cd /c/Users/Rakyan/Documents/deakin/IntroToProg/LostInSpace/
+  437  ./lostinspace.exe 
+  438  skm clang++ *.cpp -o lostinspace
+  439  ./lostinspace.exe 
+  440  skm clang++ *.cpp -o lostinspace
+  441  ./lostinspace.exe 
+  442  skm clang++ *.cpp -o lostinspace
+  443  ./lostinspace.exe 
+  444  skm clang++ *.cpp -o lostinspace
+  445  ./lostinspace.exe 
+  446  skm clang++ *.cpp -o lostinspace
+  447  ./lostinspace.exe 
+  448  skm clang++ *.cpp -o lostinspace
+  449  ./lostinspace.exe 
+  450  skm clang++ *.cpp -o lostinspace
+  451  cd ..
+  452  cd ..
+  453  git add .
+  454  git commit -m "Commit #8"
+  455  git push origin master
+  456  skm clang++ *.cpp -o lostinspace
+  457  cd /c/Users/Rakyan/Documents/deakin/IntroToProg/LostInSpace/
+  458  skm clang++ *.cpp -o lostinspace
+  459  skm clang++ *.cpp -o lostinspace
+  460  skm clang++ *.cpp -o lostinspace
+  461  skm clang++ *.cpp -o lostinspace
+  462  skm clang++ *.cpp -o lostinspace
+  463  ./lostinspace.exe 
+  464  skm clang++ *.cpp -o lostinspace
+  465  ./lostinspace.exe 
+  466  skm clang++ *.cpp -o lostinspace
+  467  skm clang++ *.cpp -o lostinspace
+  468  ./lostinspace.exe 
+  469  skm clang++ *.cpp -o lostinspace
+  470  ./lostinspace.exe 
+  471  skm clang++ *.cpp -o lostinspace
+  472  ./lostinspace.exe 
+  473  skm clang++ *.cpp -o lostinspace
+  474  ./lostinspace.exe 
+  475  skm clang++ *.cpp -o lostinspace
+  476  ./lostinspace.exe 
+  477  skm clang++ *.cpp -o lostinspace
+  478  ./lostinspace.exe 
+  479  skm clang++ *.cpp -o lostinspace
+  480  ./lostinspace.exe 
+  481  skm clang++ *.cpp -o lostinspace
+  482  ./lostinspace.exe 
+  483  skm clang++ *.cpp -o lostinspace
+  484  ./lostinspace.exe 
+  485  skm clang++ *.cpp -o lostinspace
+  486  ./lostinspace.exe 
+  487  skm clang++ *.cpp -o lostinspace
+  488  skm clang++ *.cpp -o lostinspace
+  489  skm clang++ *.cpp -o lostinspace
+  490  skm clang++ *.cpp -o lostinspace
+  491  skm clang++ *.cpp -o lostinspace
+  492  skm clang++ *.cpp -o lostinspace
+  493  skm clang++ *.cpp -o lostinspace
+  494  ./lostinspace.exe 
+  495  skm clang++ *.cpp -o lostinspace
+  496  skm clang++ *.cpp -o lostinspace
+  497  skm clang++ *.cpp -o lostinspace
+  498  git add .
+  499  git commit -m "Commit #9"
+  500  git push origin master
+  501  cd /c/Users/Rakyan/Documents/deakin/
+  502  cd IntroToProg/
+  503  mkdir buffOver
+  504  cd buffOver/
+  505  skm new c++
+  506  skm clang++ program.cpp -o test
+  507  ./test.exe 
+  508  ./test.exe 
+  509  ./test.exe 
+  510  ./test.exe 
+  511  history > hist.txt

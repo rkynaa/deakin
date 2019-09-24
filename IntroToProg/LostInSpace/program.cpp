@@ -2,7 +2,6 @@
 #include <vector>
 #include "player.h"
 #include "planet.h"
-#include "extras.h"
 
 using namespace std;
 

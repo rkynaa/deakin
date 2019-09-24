@@ -11,7 +11,7 @@ footer {
 .h1_title{
     background: url(https://media.giphy.com/media/LpDKmmMdp5rjO/giphy.gif);
     height:20vh;
-    color: white;
+    color: #6600ec;
     text-align: center;
     font-family: 'Hepta Slab', serif;
 }
@@ -33,5 +33,5 @@ li a {
     text-decoration: none;
     }
 li a:hover {
-    background-color: #111;
+    background-color: rgb(77, 75, 75);
 }

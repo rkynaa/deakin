@@ -1,0 +1,3 @@
+
+#define HEIGHT_WINDOW 800;
+#define WIDTH_WINDOW 800;

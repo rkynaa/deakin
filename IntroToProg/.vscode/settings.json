@@ -5,5 +5,14 @@
         "CHERE_INVOKING": "enabled_from_arguments"
     },
     "terminal.integrated.shell.windows": "C:/msys64/usr/bin/bash.exe",
-    "terminal.integrated.shellArgs.windows": ["--login"],
+    "terminal.integrated.shellArgs.windows": [
+        "--login"
+    ],
+    "files.associations": {
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp"
+    },
 }
