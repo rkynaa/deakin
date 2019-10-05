@@ -1,7 +1,6 @@
 #include "splashkit.h"
 #include <vector>
 
-using namespace std;
 
 struct knight{
     bool valid;
@@ -25,8 +24,8 @@ enum knight_update_options {
     READ_QUEST,
     WRITE_QUEST,
     UPDATE_QUEST,
-    QUIT,
-    DEFAULT
+    QUIT_KNIGHT,
+    DEF_KNIGHT
 };
 
 enum kingdom_update_options {
@@ -34,8 +33,9 @@ enum kingdom_update_options {
     WRITE_KINGDOM,
     ADD_KNIGHT,
     DELETE_KNIGHT,
-    QUIT,
-    DEFAULT
+    QUERY_KNIGHT,
+    QUIT_KINGDOM,
+    DEF_KINGDOM
 };
 
 string read_string(string prompt){
@@ -78,8 +78,8 @@ knight read_knight(){
 void write_knight(knight &curr){
     if (curr.valid){
         write_line("Your current knight's name is: " + curr.name_knight);
-        write_line("The knight's age is: " + to_string(curr.age));
-        write_line("The knight already carry " + to_string(curr.items.size()));
+        write_line("The knight's age is: " + std::to_string(curr.age));
+        write_line("The knight already carry " + std::to_string(curr.items.size()));
     } else {
         write_line("Your knight does not have a name and/or age");
     }
@@ -92,7 +92,7 @@ void update_knight(knight &curr){
         while (ind1) {
             string options[2] = {"Update name", "Update age"};
             for (int i = 0; i < (sizeof(options)/sizeof(string)); i++){
-                write_line(to_string(i+1) + ". " + options[i]);
+                write_line(std::to_string(i+1) + ". " + options[i]);
             }
             tempOpt = read_integer("Select your option: ");
             if (tempOpt != -1) {
@@ -178,65 +178,54 @@ void write_kingdom(kingdom &curr){
 
 void add_knight(kingdom &curr) {
     if (curr.valid){
-        knight newKni
+        knight temp;
+        write_knight(temp);
+        curr.knights.push_back(temp);
     } else {
         write_line("Your kingdom does not have anything, even a name!");
     }
 }
 
-knight_update_options selectopt(knight &currknight) {
-    string input;
-    int tempInp, inp;
-    bool ind = true;
-    string options[4] = {"Write Knight", "Read Knight", "Update Knight", "Write Quest", "Read Quest", "Update Quest", "Quit"};
-    int size = (sizeof(options)/sizeof(string));
-    while (ind) {
-        for (int i = 0; i < size; i++){
-            write_line(to_string(i+1) + ". " + options[i]);
-        }
-        tempInp = read_integer("Enter your option: ");
-        if (tempInp != -1){
-            if (tempInp >= 1 && tempInp <= size) {
-                write_line("You choose the '" + options[tempInp - 1] + "' Option");
-                if (tempInp == 1) {
-                    write_knight(currknight);
-                    return WRITE_KNIGHT;
-                } else if (tempInp == 2) {
-                    currknight = read_knight();
-                    return READ_KNIGHT;
-                } else if (tempInp == 3) {
-                    update_knight(currknight);
-                    return UPDATE_KNIGHT;
-                } else if (tempInp == 4) { 
-                    write_quest(currknight);
-                    return WRITE_QUEST;
-                } else if (tempInp == 5) {
-                    read_quest(currknight);
-                    return READ_QUEST;
-                } else if (tempInp == 6) {
-                    update_quest(currknight);
-                    return UPDATE_QUEST;
-                } else {
-                    write_line("You choose to quit! See you!");
-                    return QUIT;
+void delete_knight(kingdom &curr){
+    if (curr.valid){
+        if (curr.knights.size != 0) {
+            string targetName = read_string("Enter the knight that you want to delete: ");
+            for (int i = 0; i < curr.knights.size; i++){
+                if (curr.knights[i].name_knight == targetName) {
+                    curr.knights.erase(
+                        std::remove_if(curr.knights.begin(), curr.knights.end(), [&](knight const &targetKnight) {
+                            return targetKnight.name_knight == targetName;
+                        }
+                    ), curr.knights.end());
                 }
-            } else {
-                write_line("Option not available! Try again!");
             }
+        } else {
+            write_line("Your kingdom does not have any knight!");
+        }
+    } else {
+        write_line("Your kingdom does not have anything, even a name!");
+    }
+}
+
+void query_knight(kingdom &curr){
+    string targetName = read_string("What's the knight's name: ");
+    for (int i = 0; i < curr.knights.size; i++){
+        if (curr.knights[i].name_knight == targetName){
+            write_line("knight found!");
+            write_knight(curr.knights[i]);
         }
     }
-    return DEFAULT;
 }
 
 kingdom_update_options selectOpt_kingdom(kingdom &curr) {
     string input;
     int tempInp, inp;
-    string options[4] = {"Write Kingdom", "Read Kingdom", "Add Knight", "Delete Knight", "Query Knight", "Quit"};
+    string options[6] = {"Write Kingdom", "Read Kingdom", "Add Knight", "Delete Knight", "Query Knight", "Quit"};
     bool ind = true;
     int size = (sizeof(options)/sizeof(string));
     while (ind) {
         for (int i = 0; i < size; i++){
-            write_line(to_string(i+1) + ". " + options[i]);
+            write_line(std::to_string(i+1) + ". " + options[i]);
         }
         tempInp = read_integer("Enter your option: ");
         if (tempInp != -1){
@@ -246,39 +235,36 @@ kingdom_update_options selectOpt_kingdom(kingdom &curr) {
                     write_kingdom(curr);
                     return WRITE_KINGDOM;
                 } else if (tempInp == 2) {
-                    currknight = read_knight();
-                    return READ_KNIGHT;
+                    read_kingdom(curr);
+                    return READ_KINGDOM;
                 } else if (tempInp == 3) {
-                    update_knight(currknight);
-                    return UPDATE_KNIGHT;
-                } else if (tempInp == 4) { 
-                    write_quest(currknight);
-                    return WRITE_QUEST;
+                    add_knight(curr);
+                    return ADD_KNIGHT;
+                } else if (tempInp == 4) {
+                    delete_knight(curr);
+                    return DELETE_KNIGHT;
                 } else if (tempInp == 5) {
-                    read_quest(currknight);
-                    return READ_QUEST;
-                } else if (tempInp == 6) {
-                    update_quest(currknight);
-                    return UPDATE_QUEST;
+                    query_knight(curr);
+                    return QUERY_KNIGHT;
                 } else {
                     write_line("You choose to quit! See you!");
-                    return QUIT;
+                    return QUIT_KINGDOM;
                 }
             } else {
                 write_line("Option not available! Try again!");
             }
         }
     }
-    return DEFAULT;
+    return DEF_KINGDOM;
 }
 
 int main()
 {
-    knight mainKnight;
+    kingdom mainKingdom;
     // add_knight(mainKingdom);
-    kingdom_update_options mainOpt = DEFAULT;
-    while (mainOpt != QUIT) {
-        mainOpt = selectOpt_kingdom(mainKnight);
+    kingdom_update_options mainOpt = DEF_KINGDOM;
+    while (mainOpt != QUIT_KINGDOM) {
+        mainOpt = selectOpt_kingdom(mainKingdom);
     }
     return 0;
 }

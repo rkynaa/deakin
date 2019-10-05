@@ -1,4 +1,5 @@
 #include "splashkit.h"
+#include "termi"
 #include <vector>
 
 using namespace std;
@@ -138,7 +139,7 @@ void update_quest(knight &curr){
 knight_update_options selectopt(knight &currknight) {
     string input;
     int tempInp, inp;
-    string options[4] = {"Write Knight", "Read Knight", "Update Knight", "Write Quest", "Read Quest", "Update Quest", "Quit"};
+    string options[7] = {"Write Knight", "Read Knight", "Update Knight", "Write Quest", "Read Quest", "Update Quest", "Quit"};
     bool ind = true;
     int size = (sizeof(options)/sizeof(string));
     while (ind) {
