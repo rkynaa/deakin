@@ -1,4 +1,5 @@
 #include "splashkit.h"
+#include "teminal"
 #include <string.h>
 #include <ctype.h>
 
